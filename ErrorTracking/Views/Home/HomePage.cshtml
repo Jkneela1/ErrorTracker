@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<html>
+<head>
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+</head>
+<div class="row">
+    <div class="col-lg-6 text-sm-right">
+        <a href="index.php?logout" title="ErrorTracker.com">Logout</a>
+
+    </div>
+    <div class="col-lg-6 text-sm-left">
+        <a href="index.php?logout" title="ErrorTracker.com">ErrorTracker</a>
+
+    </div>
+</div>
+<body style="background-color:gray">
+
+    <form action="/cgi-bin/hello_get.cgi" method="get">
+        Post from user: Experiment626
+        <br>
+        <textarea rows="7" cols="100" name="description">
+            Issue: 
+         </textarea><br>
+
+    </form>
+
+    <form action="/cgi-bin/hello_get.cgi" method="get">
+        Post from user: ILoveBananas        <br>
+        <textarea rows="7" cols="100" name="description">
+            Issue: 
+         </textarea><br>
+
+    </form>
+
+    <form action="/cgi-bin/hello_get.cgi" method="get">
+        Post from user: ProgrammingIsFun        <br>
+        <textarea rows="7" cols="100" name="description">
+            Issue: 
+         </textarea><br>
+
+    </form>
+    <div class="wrapper">
+        <input type="text" class="input" placeholder="What Language would you like" />
+        <input type="text" class="input" placeholder="Compiler Error Number" />
+        <input type="text" class="input" placeholder="Would you like for this to be answered" />
+        
+    </div>
+    <input type="button" class="alert-success" placeholder="Search" size="10" maxlength="20"/>
+
+</body>
+
+
+</html>
